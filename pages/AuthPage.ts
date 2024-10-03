@@ -1,31 +1,31 @@
-const { I } = inject();
+const { I } = inject()
 
 export = {
-  visit () {
-    I.amOnPage('/register');
+  visit() {
+    I.amOnPage('/register')
   },
 
-  fillUsername (username: string) {
+  fillUsername(username: string) {
     // TODO: implemented
   },
 
-  fillEmail (email: string) {
+  fillEmail(email: string) {
     // TODO: implemented
   },
 
-  fillPassword (password: string) {
+  fillPassword(password: string) {
     // TODO: implemented
   },
 
-  submitForm () {
+  submitForm() {
     // TODO: implemented
   },
 
-  signUp (credentials: { username: string; email: string; password: string }) {
+  signUp(credentials: { username: string; email: string; password: string }) {
     this.visit()
     this.fillUsername(credentials.username)
     this.fillEmail(credentials.email)
     this.fillPassword(credentials.password)
     this.submitForm()
-  }
+  },
 }

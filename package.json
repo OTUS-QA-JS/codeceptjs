@@ -1,30 +1,32 @@
 {
-    "name": "codeceptjs-tests",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "codeceptjs": "codeceptjs run --steps",
-        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
-        "codeceptjs:ui": "codecept-ui --app",
-        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
-        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
-        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
-        "gpo": "codeceptjs gpo",
-        "go": "codeceptjs go",
-        "tests": "codeceptjs run --tests",
-        "pauseOnFail": "codeceptjs run -p pauseOnFail",
-        "features": "codeceptjs run --features",
-        "gherkin:snippets": "codeceptjs gherkin:snippets"
-    },
-    "devDependencies": {
-        "@codeceptjs/configure": "^1.0.1",
-        "@codeceptjs/examples": "^1.2.4",
-        "@codeceptjs/ui": "^1.2.0",
-        "@faker-js/faker": "^9.0.3",
-        "@types/node": "^22.7.4",
-        "codeceptjs": "^3.6.7",
-        "playwright": "^1.47.2",
-        "ts-node": "^10.9.2",
-        "typescript": "^5.6.2"
-    }
+  "name": "codeceptjs-tests",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write",
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs:ui": "codecept-ui --app",
+    "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
+    "gpo": "codeceptjs gpo",
+    "go": "codeceptjs go",
+    "tests": "codeceptjs run --tests",
+    "pauseOnFail": "codeceptjs run -p pauseOnFail",
+    "features": "codeceptjs run --features",
+    "gherkin:snippets": "codeceptjs gherkin:snippets"
+  },
+  "devDependencies": {
+    "@codeceptjs/configure": "^1.0.1",
+    "@codeceptjs/examples": "^1.2.4",
+    "@codeceptjs/ui": "^1.2.0",
+    "@faker-js/faker": "^9.0.3",
+    "@types/node": "^22.7.4",
+    "codeceptjs": "^3.6.7",
+    "playwright": "^1.47.2",
+    "prettier": "3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
 }
